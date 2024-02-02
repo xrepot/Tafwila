@@ -7,7 +7,9 @@
   color: white;
   font-family: "Cairo", sans-serif;
 }
-html,body{
+
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -19,6 +21,8 @@ html,body{
   --input-color: #333434;
   --gray-color: #727272;
   --white-color: #fff;
+  --padding-top: 100px;
+  --padding-bottom: 100px;
 }
 
 ::selection {
@@ -423,7 +427,7 @@ body {
 /*************start categories section************************/
 .categories {
   padding-top: 30px;
-  padding-bottom: 100px;
+  padding-bottom: var(--padding-bottom);
 
 }
 
@@ -530,7 +534,7 @@ body {
 
 /**************start food details***************/
 .food-details {
-  padding-top: 100px;
+  padding-top: var(--padding-top);
 
 }
 
@@ -543,7 +547,7 @@ body {
 
 .food-details .food-information img {
   width: 500px;
- max-width: 100%;
+  max-width: 100%;
 }
 
 
@@ -616,11 +620,13 @@ body {
   fill: var(--main-color);
 
 }
-@media (max-width:400px){
-  .food-details .food-information img{
-    width: 300px ;
+
+@media (max-width:400px) {
+  .food-details .food-information img {
+    width: 300px;
   }
 }
+
 @media(max-width:1200px) {
   .food-details {
     text-align: center;
@@ -633,8 +639,182 @@ body {
     flex-direction: column;
 
   }
-  .food-details .food-footer #heart{
+
+  .food-details .food-footer #heart {
     margin-bottom: 10px;
+  }
+
+}
+
+/*************************contact us***************************/
+.contact-us {
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+  margin-top: 100px;
+
+}
+
+.contact-us .container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.contact-us .customer-details {
+  background-color: var(--box-color);
+  border-radius: 20px;
+  width: 50%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.contact-us .customer-details form .form-group {
+  padding: 20px;
+
+}
+
+.contact-us .customer-details form .form-group input,
+textarea {
+  width: 97%;
+  border: none;
+  outline: none;
+  margin: 10px;
+  background-color: var(--input-color);
+  padding: 10px 20px;
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+}
+
+.contact-us .customer-details form .form-group:nth-child(3) {
+  height: 300px;
+}
+
+.contact-us .customer-details form .form-group:nth-child(3) textarea {
+  height: 80%;
+  resize: none;
+}
+
+
+.contact-us .customer-details form .form-group label {
+  font-size: 25px;
+}
+
+.contact-us .customer-details form .form-group input:focus {
+  border: none;
+  outline: none;
+
+}
+
+.contact-us .customer-details form .form-group button {
+  width: 100%;
+  background: var(--main-color);
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contact-us .container .tafwila-info {
+  min-width: 25%;
+}
+
+.contact-us .container .tafwila-info .tafwila-telphones {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--box-color);
+  padding: 30px 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.contact-us .container .tafwila-info .tafwila-telphones .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: var(--main-color);
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+.contact-us .container .tafwila-info .tafwila-telphones .tafwila-contact-numbers {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+
+.contact-us .container .tafwila-info .tafwila-address {
+  background-color: var(--box-color);
+  padding: 20px 20px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.contact-us .container .tafwila-info .tafwila-address ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.contact-us .container .tafwila-info .tafwila-address ul li span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--main-color);
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  margin-left: 3%;
+
+}
+
+@media (max-width:1200px) {
+
+  .contact-us{
+    margin-top: 10px;
+  }
+  .contact-us .container {
+    flex-direction: column;
+    
+  }
+  .contact-us .customer-details,   .contact-us .container .tafwila-info  {
+    width: 100%;
+    
+  }
+  .contact-us .customer-details {
+    margin-bottom: 50px;
+  }
+  .contact-us .container .tafwila-info {
+    margin-bottom: 100px;
   }
 
 }
