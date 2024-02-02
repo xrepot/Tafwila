@@ -723,6 +723,7 @@ textarea {
   -o-border-radius: 20px;
   font-size: 20px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .contact-us .container .tafwila-info {
