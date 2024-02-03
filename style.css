@@ -566,6 +566,10 @@ body {
   background-color: var(--input-color);
   border: none;
   cursor: pointer;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
 }
 
 .food-details .food-information .food-footer button:hover {
@@ -583,15 +587,29 @@ body {
   fill: var(--main-color);
 }
 
+@media(max-width:900px){
+  .food-details .food-information > div {
+    flex-direction: column;
+ 
+  }
+}
 @media (max-width: 400px) {
   .food-details .food-information img {
     width: 300px;
+    margin-top: 30px;
   }
 }
 @media (max-width: 450px) {
   .categories-items {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    
   }
+
+  .food-details .food-information .food-icons {
+    justify-content: center;
+    
+  }
+
 }
 
 @media (max-width: 1200px) {
