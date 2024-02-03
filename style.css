@@ -115,15 +115,18 @@ body {
   background-color: var(--main-color);
   box-shadow: 0px 0px 10px var(--main-color);
 }
+
 .head .container .links .ul-links li a.active:hover::before {
   transform: scaleX(1.1);
 }
+
 .head .container .btns {
   display: flex;
   gap: 10px;
   cursor: pointer;
   flex-direction: row-reverse;
 }
+
 .head .container .btns i {
   width: 40px;
   height: 40px;
@@ -135,13 +138,16 @@ body {
   transition: 0.3s;
   background-color: var(--main-color);
 }
+
 .head .container .btns i:hover {
   filter: brightness(90%);
   border-radius: 50%;
 }
+
 .head .container .btns .cart-icon {
   position: relative;
 }
+
 .head .container .btns .cart-icon::after {
   content: "";
   position: absolute;
@@ -153,6 +159,7 @@ body {
   border: 3px solid var(--bg-color);
   background-color: #ff7900;
 }
+
 .head .container .logo .menu-icon {
   display: none;
   align-items: center;
@@ -168,23 +175,28 @@ body {
   border-radius: 10px;
   background-color: var(--main-color);
 }
+
 .head .container .logo .menu-icon:hover,
 .menu .container .menu-items .items .img-box .product-info {
   filter: brightness(90%);
 }
+
 .head .container .logo .menu-icon i {
   transform: scaleX(0.8);
   margin-bottom: 2px;
 }
+
 @media (max-width: 900px) {
   .head .container .links {
     display: none;
   }
+
   .head .container .logo {
     display: flex;
     align-items: center;
     gap: 10px;
   }
+
   .head .container .logo .menu-icon {
     display: flex;
   }
@@ -204,6 +216,7 @@ body {
   transition: 0.5s;
   background: rgb(34 20 8 / 30%);
 }
+
 .close-menu {
   position: absolute;
   right: 5px;
@@ -218,13 +231,16 @@ body {
   border-radius: 14px;
   background: var(--main-color);
 }
+
 .close-menu i {
   transition: 0.6s;
   margin-bottom: 2px;
 }
+
 .close-menu:hover i {
   transform: rotate(180deg);
 }
+
 .nav-links {
   width: 100%;
   height: 100%;
@@ -233,6 +249,7 @@ body {
   grid-template-rows: 1fr 1fr;
   gap: 5px;
 }
+
 .nav-links a {
   cursor: pointer;
   transition: 0.3s;
@@ -245,13 +262,16 @@ body {
   background-color: rgb(80 62 34 / 30%);
   border: 1px solid rgba(255, 255, 255, 0.24);
 }
+
 .nav-links a:hover {
   background: none;
   transition: 0.3s;
 }
+
 .nav-menu.active-menu {
   transform: translateX(0);
 }
+
 /*================= [End Nav Menu] =================*/
 /*================= [Start Home] =================*/
 .home {
@@ -428,6 +448,7 @@ body {
   z-index: -1;
   animation: left-move 0.6s linear forwards;
 }
+
 /*================= [End main Title] =================*/
 /*************start categories section************************/
 .categories {
@@ -437,8 +458,7 @@ body {
 
 .categories-items {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 40px;
 }
 
@@ -449,7 +469,6 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: var(--box-color);
-  padding: 20px;
   border-radius: 20px;
   height: 270px;
   transition: 0.8s;
@@ -510,10 +529,12 @@ body {
   align-items: center;
   height: 100vh;
 }
-.food-details .food-information > div {
+
+.food-details .food-information>div {
   display: flex;
   align-items: center;
 }
+
 .food-details .food-information img {
   width: 500px;
   max-width: 100%;
@@ -566,10 +587,10 @@ body {
   background-color: var(--input-color);
   border: none;
   cursor: pointer;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
 }
 
 .food-details .food-information .food-footer button:hover {
@@ -587,27 +608,29 @@ body {
   fill: var(--main-color);
 }
 
-@media(max-width:900px){
-  .food-details .food-information > div {
+@media(max-width:900px) {
+  .food-details .food-information>div {
     flex-direction: column;
- 
+
   }
 }
+
 @media (max-width: 400px) {
   .food-details .food-information img {
     width: 300px;
     margin-top: 30px;
   }
 }
+
 @media (max-width: 450px) {
   .categories-items {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    
+
   }
 
   .food-details .food-information .food-icons {
     justify-content: center;
-    
+
   }
 
 }
@@ -616,6 +639,7 @@ body {
   .food-details {
     text-align: center;
   }
+
   .food-details .food-footer #heart {
     margin-bottom: 10px;
   }
@@ -627,6 +651,7 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 40px;
 }
+
 .menu .container .menu-items .items {
   display: flex;
   flex-direction: column;
@@ -635,6 +660,7 @@ body {
   border-radius: 26px;
   background-color: var(--box-color);
 }
+
 .menu .container .menu-items .items .img-box {
   height: 250px;
   margin: auto;
@@ -642,6 +668,7 @@ body {
   overflow: hidden;
   border-radius: 26px;
 }
+
 .menu .container .menu-items .items .img-box .product-info {
   position: absolute;
   left: 15px;
@@ -658,18 +685,22 @@ body {
   transition: 0.3s;
   background-color: var(--gray-color);
 }
+
 .menu .container .menu-items .items .img-box img {
   width: 100%;
   height: 100%;
   transition: 0.3s;
 }
+
 .menu .container .menu-items .items .img-box:hover img {
   transform: scale(1.1);
 }
+
 .menu .container .menu-items .items h2 {
   font-size: 26px;
   text-align: center;
 }
+
 .menu .container .menu-items .items .product-details {
   text-align: center;
   text-overflow: ellipsis;
@@ -678,19 +709,24 @@ body {
   color: var(--gray-color);
   font-weight: bold;
 }
+
 .menu .container .menu-items .items .product-btns {
   display: flex;
   gap: 10px;
 }
+
 .menu .container .menu-items .items .product-btns span {
   background-color: var(--main-color);
 }
+
 .menu .container .menu-items .items .product-btns .product-price {
   width: -webkit-fill-available;
 }
+
 .menu .container .menu-items .items .product-btns .cart-product {
   width: 25%;
 }
+
 .menu .container .menu-items .items .product-btns .product-price,
 .menu .container .menu-items .items .product-btns .cart-product {
   cursor: pointer;
@@ -701,10 +737,12 @@ body {
   font-weight: bold;
   border-radius: 9px;
 }
+
 .menu .container .menu-items .items .product-btns .product-price:hover,
 .menu .container .menu-items .items .product-btns .cart-product:hover {
   filter: brightness(90%);
 }
+
 /*================= [End Menu] =================*/
 /*================= [Start Footer] =================*/
 footer {
@@ -714,10 +752,12 @@ footer {
   font-size: 20px;
   background-color: var(--box-color);
 }
+
 footer span {
   font-weight: bold;
   color: var(--main-color);
 }
+
 /*================= [End Footer] =================*/
 
 /*************************contact us***************************/
@@ -735,8 +775,9 @@ footer span {
 .contact-us .customer-details {
   background-color: var(--box-color);
   border-radius: 20px;
-  width: 50%;
-  width: -webkit-fill-available;
+  width: calc(100% - 250px);
+
+  
 }
 
 .contact-us .customer-details form .form-group {
@@ -821,11 +862,7 @@ textarea {
   -webkit-border-radius: 50%;
 }
 
-.contact-us
-  .container
-  .tafwila-info
-  .tafwila-telphones
-  .tafwila-contact-numbers {
+.contact-us .container .tafwila-info .tafwila-telphones .tafwila-contact-numbers {
   display: flex;
   flex-direction: column;
   margin-left: 10%;
@@ -833,7 +870,7 @@ textarea {
 
 .contact-us .container .tafwila-info .tafwila-address {
   background-color: var(--box-color);
-  padding: 20px 20px;
+  padding: 40px 20px;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -866,20 +903,25 @@ textarea {
   .contact-us {
     margin-top: 85px;
   }
+
   .contact-us .container {
     flex-direction: column;
   }
+
   .contact-us .customer-details,
   .contact-us .container .tafwila-info {
     width: 100%;
   }
+
   .contact-us .customer-details {
     margin-bottom: 50px;
   }
+
   .contact-us .container .tafwila-info {
     margin-bottom: 100px;
   }
 }
+
 /*================= [Start Animation] =================*/
 @keyframes up-down {
   0% {
@@ -894,6 +936,7 @@ textarea {
     transform: translateY(0);
   }
 }
+
 @keyframes left-move {
   50% {
     left: 0;
@@ -923,4 +966,5 @@ textarea {
     height: 100%;
   }
 }
+
 /*================= [End Animation] =================*/
