@@ -461,6 +461,17 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 40px;
 }
+.categories-items .items img {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.categories-items .items img.lazy {
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+}
 
 .categories .items {
   position: relative;
@@ -472,7 +483,6 @@ body {
   border-radius: 20px;
   height: 270px;
   transition: 0.8s;
-
 }
 
 .categories .items:hover {
@@ -503,7 +513,6 @@ body {
   border-radius: 24px;
   margin-bottom: 10px;
   transition: 0.3s;
-
 }
 
 .categories-items .items img:hover {
@@ -530,7 +539,7 @@ body {
   height: 100vh;
 }
 
-.food-details .food-information>div {
+.food-details .food-information > div {
   display: flex;
   align-items: center;
 }
@@ -587,10 +596,10 @@ body {
   background-color: var(--input-color);
   border: none;
   cursor: pointer;
-  -webkit-border-radius: ;
-  -moz-border-radius: ;
-  -ms-border-radius: ;
-  -o-border-radius: ;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .food-details .food-information .food-footer button:hover {
@@ -608,10 +617,9 @@ body {
   fill: var(--main-color);
 }
 
-@media(max-width:900px) {
-  .food-details .food-information>div {
+@media (max-width: 900px) {
+  .food-details .food-information > div {
     flex-direction: column;
-
   }
 }
 
@@ -625,14 +633,11 @@ body {
 @media (max-width: 450px) {
   .categories-items {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-
   }
 
   .food-details .food-information .food-icons {
     justify-content: center;
-
   }
-
 }
 
 @media (max-width: 1200px) {
@@ -642,6 +647,50 @@ body {
 
   .food-details .food-footer #heart {
     margin-bottom: 10px;
+  }
+}
+
+.container .swiper .swiper-wrapper  {
+padding-bottom: var(--padding-bottom);
+text-align: center;
+
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background: var(--main-color);
+}
+
+.container .swiper .swiper-wrapper .swiper-slide {
+  background-color: var(--input-color);
+  padding: 10px;
+  margin: 3px;
+  border-radius: 20px;
+  cursor: pointer;
+width: 30% !important;
+}
+.swiper-slide span, h2{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.swiper .swiper-wrapper .swiper-slide:hover {
+  background-color: var(--main-color);
+}
+.swiper .swiper-wrapper .swiper-slide:hover img {
+  transform: scale(1.1);
+}
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: var(--gray-color);
+  outline: none;
+}
+.swiper .swiper-wrapper img {
+  width: 200px;
+  transition: 0.5s;
+}
+@media(max-width:800px){
+  .container .swiper .swiper-wrapper .swiper-slide {
+    width: 100% !important;
   }
 }
 
@@ -776,8 +825,6 @@ footer span {
   background-color: var(--box-color);
   border-radius: 20px;
   width: calc(100% - 250px);
-
-  
 }
 
 .contact-us .customer-details form .form-group {
@@ -862,7 +909,11 @@ textarea {
   -webkit-border-radius: 50%;
 }
 
-.contact-us .container .tafwila-info .tafwila-telphones .tafwila-contact-numbers {
+.contact-us
+  .container
+  .tafwila-info
+  .tafwila-telphones
+  .tafwila-contact-numbers {
   display: flex;
   flex-direction: column;
   margin-left: 10%;
@@ -968,3 +1019,11 @@ textarea {
 }
 
 /*================= [End Animation] =================*/
+
+/*************404 page****************/
+.background-notFound {
+  padding-top: var(--padding-top);
+}
+.background-notFound img {
+  width: 100%;
+}
