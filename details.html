@@ -14,6 +14,12 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>تفويلة</title>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="swiper.js" defer></script>
   </head>
 
   <body>
@@ -40,7 +46,7 @@
         </div>
         <div class="links">
           <ul class="ul-links">
-            <li><a href="#home" class="active">الرئيسية</a></li>
+            <li><a href="#home" >الرئيسية</a></li>
             <li><a href="#categories">الاقسام</a></li>
             <li><a href="#menu">المنيو</a></li>
             <li><a href="#contact">تواصل معنا</a></li>
@@ -167,12 +173,15 @@
     </section>
 
     <!-----------------swipper js slider others products ------------------------>
-    <div class="container">
+    <div class="container swiper-details">
+              <h1 class="main-title">
+                اكلات اخري 
+            </h1>
       <!-- Slider main container -->
       <div class="swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-<!-----slides ------->
+          <!-----slides ------->
 
           <div class="swiper-slide">
             <img src="imgs/Burger.png" />
@@ -455,9 +464,8 @@
             <hr />
             <span>400 جنيه</span>
           </div>
-
         </div>
-        
+
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
 
@@ -469,8 +477,5 @@
         <div class="swiper-scrollbar"></div>
       </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="app.js"></script>
   </body>
 </html>

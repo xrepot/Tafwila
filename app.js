@@ -1,11 +1,14 @@
-let navMenu = document.querySelector(".nav-menu");
-let closeMenuBtn = document.querySelector(".close-menu");
-let opanMenuBtn = document.querySelector(".menu-icon");
-let linksContainer = document.querySelector(".ul-links");
-let navLinks = document.querySelectorAll(".head .container .links ul li a");
-let sections = document.querySelectorAll(".home, .categories, .menu");
-let categories = document.getElementById('categories-items');
-let foodPhoto = document.querySelectorAll('.food-photo');
+
+ let navMenu = document.querySelector(".nav-menu");
+ let closeMenuBtn = document.querySelector(".close-menu");
+ let opanMenuBtn = document.querySelector(".menu-icon");
+ let linksContainer = document.querySelector(".ul-links");
+ let navLinks = document.querySelectorAll(".head .container .links ul li a");
+ let sections = document.querySelectorAll(".home, .categories, .menu");
+ const slides = document.querySelectorAll('.slide');
+ const btnLeft = document.querySelector('.slider__btn--left');
+ const btnRight = document.querySelector('.slider__btn--right');
+ const dotsContainer = document.querySelector('.dotsSlider');
 
 // Open Menu
 opanMenuBtn.addEventListener("click", () => {
@@ -50,48 +53,72 @@ window.addEventListener("scroll", function () {
   });
 });
 
-// swipper js 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: false,
-   centeredSlides: true,
-   
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+// building slider
+let currentSlide = 0;
+let maxSlide = slides.length;
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+// creating Dots element
+const createDots = function () {
+  slides.forEach(function (_, i) {
+    let html = `<button class="dots__dot" data-slide=${i}></button>`;
+    dotsContainer.insertAdjacentHTML('beforeend', html);
+  });
+};
+createDots();
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+const activeDots = function (dot) {
+  document.querySelectorAll('.dots__dot').forEach(dotElement => {
+    dotElement.classList.remove('dots__dot--active');
+  });
+  document
+    .querySelector(`.dots__dot[data-slide="${dot}"]`)
+    .classList.add('dots__dot--active');
+};
+
+dotsContainer.addEventListener('click', function (e) {
+  if (e.target.classList.contains('dots__dot')) {
+    const slide = e.target.dataset.slide;
+    activeDots(slide);
+    goToSlide(slide);
+  }
 });
 
-// make blur on categories images on scroll
-const observerObject = {
-  root: null,
-  threshold: 0.7
-}
-const observerCallfun = function (entries) {
-  const [entry] = entries;
-  foodPhoto.forEach((photo) => {
-    if (entry.isIntersecting) {
-      photo.classList.remove('lazy')
-    } else {
-      photo.classList.add('lazy')
-    }
-  })
+const goToSlide = function (currentSlide) {
+  slides.forEach((slide, i) => {
+    slide.style.transform = `translateX(${100 * (i - currentSlide)}%)`;
+  });
+  activeDots(currentSlide);
+};
+goToSlide(0);
 
-}
-const headerObserver = new IntersectionObserver(observerCallfun, observerObject)
+const nextSlide = function () {
+  if (currentSlide === maxSlide - 1) {
+    currentSlide = 0;
+  } else {
+    currentSlide++;
+  }
+  goToSlide(currentSlide);
+ 
+};
+const prevSlide = function () {
+  if (currentSlide === 0) {
+    currentSlide = maxSlide - 1;
+  } else {
+    currentSlide--;
+  }
+  goToSlide(currentSlide);
 
-headerObserver.observe(categories)  
+};
 
+btnRight.addEventListener('click', nextSlide);
+btnLeft.addEventListener('click', prevSlide);
+
+// moving slide with keybord event
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'ArrowRight') {
+    nextSlide();
+  } else if (e.key === 'ArrowLeft') {
+    prevSlide();
+  }
+});
