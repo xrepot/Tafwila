@@ -111,14 +111,14 @@ const prevSlide = function () {
 
 };
 
-btnRight.addEventListener('click', nextSlide);
-btnLeft.addEventListener('click', prevSlide);
+btnRight.addEventListener('click', prevSlide);
+btnLeft.addEventListener('click', nextSlide);
 
 // moving slide with keybord event
 document.addEventListener('keydown', function (e) {
-  if (e.key === 'ArrowRight') {
+  if (e.key === 'ArrowLeft') {
     nextSlide();
-  } else if (e.key === 'ArrowLeft') {
+  } else if (e.key === 'ArrowRight') {
     prevSlide();
   }
 });
