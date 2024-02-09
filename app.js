@@ -111,8 +111,8 @@ const prevSlide = function () {
 
 };
 
-btnRight.addEventListener('click', prevSlide);
-btnLeft.addEventListener('click', nextSlide);
+btnRight.addEventListener('click', nextSlide);
+btnLeft.addEventListener('click', prevSlide);
 
 // moving slide with keybord event
 document.addEventListener('keydown', function (e) {
