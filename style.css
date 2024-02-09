@@ -963,6 +963,7 @@ textarea {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
+  
 }
 .dots__dot {
   border: none;
