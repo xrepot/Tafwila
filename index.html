@@ -9,6 +9,9 @@
       rel="stylesheet"
     />
     <title>تفويلة</title>
+    <script defer src="js/cart.js"></script>
+    <script src="components/Header.js" type="module"></script>
+    <script src="components/ScrollToTop.js" type="module"></script>
   </head>
 
   <body>
@@ -25,40 +28,14 @@
       </div>
     </div>
     <!------------navbar for xl device---------------------->
-    <div class="head">
-      <div class="container">
-        <div class="logo">
-          <span class="menu-icon">
-            <i class="uil uil-bars"> </i>
-          </span>
-          <a href="#">
-            <img alt="logo" src="imgs/logo.png" />
-          </a>
-        </div>
-        <div class="links">
-          <ul class="ul-links">
-            <li>
-              <a class="active navLI" href="#home"> الرئيسية </a>
-            </li>
-            <li>
-              <a class="navLI" href="#categories"> الاقسام </a>
-            </li>
-            <li>
-              <a class="navLI" href="#menu"> المنيو </a>
-            </li>
-            <li>
-              <a class="navLI" href="contact.html"> تواصل معنا </a>
-            </li>
-          </ul>
-        </div>
-        <div class="btns">
-          <i class="uil uil-user"></i>
-          <a href="cart.html">
-            <i class="uil uil-shopping-bag cart-icon"> </i>
-          </a>
-        </div>
-      </div>
-    </div>
+    <large-header>
+      <span slot="menu-icon" class="menu-icon">
+        <i class="uil uil-bars"> </i>
+      </span>
+      <a slot="cart-icon-link" class="cart-icon-link" href="cart.html">
+        <i class="uil uil-shopping-bag cart-icon"> </i>
+      </a>
+    </large-header>
     <!---------------------main section----------------------------->
     <main>
       <section class="home" id="home">
@@ -105,147 +82,152 @@
       <section class="menu" id="menu">
         <h1 class="main-title">اكلات متنوعه</h1>
         <div class="container">
-          <div class="menu-items">
-            <div class="items">
+          <div class="menu-items menu-items-container">
+            <div class="items food-item-details">
               <div class="img-box">
                 <span class="product-info">
                   <i class="uil uil-info"> </i>
                 </span>
-                <img alt="حلو" src="imgs/kery.jpg" />
+                <img class="product-item-image" alt="حلو" src="imgs/kery.jpg" />
               </div>
               <h2 class="product-name">ميكس شيدر10</h2>
               <p class="product-details">
                 جبنة كيري، بسطرمة، فلفل الوان وسوسيس
               </p>
               <div class="product-btns">
-                <span class="product-price"> 10ج </span>
-                <span class="cart-product">
+                <span class="product-price product-item-price"> 10ج </span>
+                <span class="cart-product add-to-cart">
                   <i class="uil uil-shopping-bag cart-icon"> </i>
                 </span>
               </div>
             </div>
-            <div class="items">
+            <div class="items food-item-details">
               <div class="img-box">
                 <span class="product-info">
                   <i class="uil uil-info"> </i>
                 </span>
-                <img alt="حلو" src="imgs/kery.jpg" />
+                <img class="product-item-image" alt="حلو" src="imgs/kery.jpg" />
               </div>
               <h2 class="product-name">ميكس شيدر9</h2>
               <p class="product-details">
                 جبنة كيري، بسطرمة، فلفل الوان وسوسيس
               </p>
               <div class="product-btns">
-                <span class="product-price"> 10ج </span>
-                <span class="cart-product">
+                <span class="product-price product-item-price"> 10ج </span>
+                <span class="cart-product add-to-cart">
                   <i class="uil uil-shopping-bag cart-icon"> </i>
                 </span>
               </div>
             </div>
-            <div class="items">
+            <div class="items food-item-details">
               <div class="img-box">
                 <span class="product-info">
                   <i class="uil uil-info"> </i>
                 </span>
-                <img alt="حلو" src="imgs/kery.jpg" />
+                <img class="product-item-image" alt="حلو" src="imgs/kery.jpg" />
               </div>
               <h2 class="product-name">ميكس شيدر8</h2>
               <p class="product-details">
                 جبنة كيري، بسطرمة، فلفل الوان وسوسيس
               </p>
               <div class="product-btns">
-                <span class="product-price"> 10ج </span>
-                <span class="cart-product">
+                <span class="product-price product-item-price"> 10ج </span>
+                <span class="cart-product add-to-cart">
                   <i class="uil uil-shopping-bag cart-icon"> </i>
                 </span>
               </div>
             </div>
-            <div class="items">
+            <div class="items food-item-details">
               <div class="img-box">
                 <span class="product-info">
                   <i class="uil uil-info"> </i>
                 </span>
-                <img alt="حلو" src="imgs/kery.jpg" />
+                <img class="product-item-image" alt="حلو" src="imgs/kery.jpg" />
               </div>
               <h2 class="product-name">ميكس شيدر7</h2>
               <p class="product-details">
                 جبنة كيري، بسطرمة، فلفل الوان وسوسيس
               </p>
               <div class="product-btns">
-                <span class="product-price"> 10ج </span>
-                <span class="cart-product">
+                <span class="product-price product-item-price"> 10ج </span>
+                <span class="cart-product add-to-cart">
                   <i class="uil uil-shopping-bag cart-icon"> </i>
                 </span>
               </div>
             </div>
-            <div class="items">
+            <div class="items food-item-details">
               <div class="img-box">
                 <span class="product-info">
                   <i class="uil uil-info"> </i>
                 </span>
-                <img alt="حلو" src="imgs/kery.jpg" />
+                <img class="product-item-image" alt="حلو" src="imgs/kery.jpg" />
               </div>
               <h2 class="product-name">ميكس شيدر6</h2>
               <p class="product-details">
                 جبنة كيري، بسطرمة، فلفل الوان وسوسيس
               </p>
               <div class="product-btns">
-                <span class="product-price"> 10ج </span>
-                <span class="cart-product">
+                <span class="product-price product-item-price"> 10ج </span>
+                <span class="cart-product add-to-cart">
                   <i class="uil uil-shopping-bag cart-icon"> </i>
                 </span>
               </div>
             </div>
-            <div class="items">
+            <div class="items food-item-details">
               <div class="img-box">
                 <span class="product-info">
                   <i class="uil uil-info"> </i>
                 </span>
-                <img alt="حلو" src="imgs/kery.jpg" />
+                <img class="product-item-image" alt="حلو" src="imgs/kery.jpg" />
               </div>
               <h2 class="product-name">ميكس شيدر5</h2>
               <p class="product-details">
                 جبنة كيري، بسطرمة، فلفل الوان وسوسيس
               </p>
               <div class="product-btns">
-                <span class="product-price"> 10ج </span>
-                <span class="cart-product">
+                <span class="product-price product-item-price"> 10ج </span>
+                <span class="cart-product add-to-cart">
                   <i class="uil uil-shopping-bag cart-icon"> </i>
                 </span>
               </div>
             </div>
-            <div class="items">
+            <div class="items food-item-details">
               <div class="img-box">
                 <span class="product-info">
                   <i class="uil uil-info"> </i>
                 </span>
-                <img alt="حلو" src="imgs/kery.jpg" />
+                <img class="product-item-image" alt="حلو" src="imgs/kery.jpg" />
               </div>
               <h2 class="product-name">ميكس شيدر2</h2>
               <p class="product-details">
                 جبنة كيري، بسطرمة، فلفل الوان وسوسيس
               </p>
               <div class="product-btns">
-                <span class="product-price"> 10ج </span>
-                <span class="cart-product">
+                <span class="product-price product-item-price"> 10ج </span>
+                <span class="cart-product add-to-cart">
                   <i class="uil uil-shopping-bag cart-icon"> </i>
                 </span>
               </div>
             </div>
-            <div class="items">
+            <div class="items food-item-details">
               <div class="img-box">
                 <span class="product-info">
                   <i class="uil uil-info"> </i>
                 </span>
-                <img alt="حلو" src="imgs/kery.jpg" />
+                <img
+                  class="product-item-image"
+                  class="product-item-image"
+                  alt="حلو"
+                  src="imgs/kery.jpg"
+                />
               </div>
               <h2 class="product-name">ميكس شيدر4</h2>
               <p class="product-details">
                 جبنة كيري، بسطرمة، فلفل الوان وسوسيس
               </p>
               <div class="product-btns">
-                <span class="product-price"> 10ج </span>
-                <span class="cart-product">
+                <span class="product-price product-item-price"> 10ج </span>
+                <span class="cart-product add-to-cart">
                   <i class="uil uil-shopping-bag cart-icon"> </i>
                 </span>
               </div>
@@ -258,7 +240,7 @@
         <h1 class="main-title">اراء العملاء</h1>
         <div class="container">
           <div class="slider">
-            <div class="slide slide--1">
+            <div class="slide">
               <div class="testimonial">
                 <address class="testimonial__author">
                   <img
@@ -341,7 +323,7 @@
                 </blockquote>
               </div>
             </div>
-            <div class="slide slide--2">
+            <div class="slide">
               <div class="testimonial">
                 <address class="testimonial__author">
                   <img
@@ -424,7 +406,7 @@
                 </blockquote>
               </div>
             </div>
-            <div class="slide slide--3">
+            <div class="slide">
               <div class="testimonial">
                 <address class="testimonial__author">
                   <img
@@ -518,6 +500,10 @@
         </div>
       </section>
     </main>
+    <!----------------Scroll to top--------------------->
+    <scroll-up>
+      <i class="uil uil-angle-double-up scrollup" slot="scroll-up"></i>
+    </scroll-up>
     <!----------------footer--------------------->
     <footer class="footer">
       <p>
@@ -525,8 +511,7 @@
         <span> Us </span>
       </p>
     </footer>
-    <script src="js/cart.js"></script>
+    <!-- <script src="js/cart.js"></script> -->
     <script src="js/home.js"></script>
-    <script src="js/darkmode.js"></script>
   </body>
 </html>

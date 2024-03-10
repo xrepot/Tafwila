@@ -1,9 +1,9 @@
 //element selector
 const cartContainer = document.getElementById("cart-products");
-const menuContainer = document.querySelector(".menu-items");
+const menuContainer = document.querySelector(".menu-items-container");
 const buyDetails = document.querySelector(".buy-details");
 const cartTable = document.querySelector(".cart-table thead tr th");
-let notification = document.querySelector(".head .container .btns .cart-icon ");
+let notification = document.querySelector("large-header .cart-icon-link");
 const priceUi = document.querySelector(".price span");
 const shippingPUi = document.querySelector(".ship-price span");
 const subTotalPriceUI = document.querySelector(".total-price span");
@@ -15,9 +15,9 @@ let itemLength;
 
 //event bubbling
 menuContainer?.addEventListener("click", function (e) {
-  const target = e.target.closest(".cart-product");
+  const target = e.target.closest(".add-to-cart");
   if (!target) return;
-  const item = target.closest(".items");
+  const item = target.closest(".food-item-details");
   if (!item) return;
   const productName = item.querySelector(".product-name").textContent.trim();
   const checkElement = JSON.parse(localStorage.getItem("tafwilaItems"))?.some(
@@ -27,8 +27,8 @@ menuContainer?.addEventListener("click", function (e) {
 
   const itemObj = {
     itemName: productName,
-    itemPrice: item.querySelector(".product-price").textContent,
-    itemPhoto: item.querySelector(".img-box img").getAttribute("src"),
+    itemPrice: item.querySelector(".product-item-price").textContent,
+    itemPhoto: item.querySelector(".product-item-image").getAttribute("src"),
     itemCount: 1,
     itemId: itemsData.length,
   };

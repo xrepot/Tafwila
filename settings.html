@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <title>تفويلة</title>
+    <script src="components/Header.js" type="module"></script>
+    <script src="js/settings.js" defer></script>
+  </head>
+
+  <body>
+    <!------------navbar for mobile device---------------------->
+    <div class="nav-menu">
+      <div class="close-menu">
+        <i class="uil uil-times"></i>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="#categories">الاقسام</a>
+        <a href="#menu">المنيو</a>
+        <a href="#contact">تواصل معنا</a>
+      </div>
+    </div>
+    <!------------navbar for xl device---------------------->
+    <large-header>
+      <span slot="menu-icon" class="menu-icon">
+        <i class="uil uil-bars"> </i>
+      </span>
+      <a slot="cart-icon-link" class="cart-icon-link" href="cart.html">
+        <i class="uil uil-shopping-bag cart-icon"> </i>
+      </a>
+    </large-header>
+
+    <!---------------------main section----------------------------->
+    <main>
+      <div class="home">
+        <img src="imgs/background.png" alt="background" class="background" />
+        <div class="overflow overflow-1"></div>
+      </div>
+    </main>
+    <section class="settings">
+      <div class="container" data-theme="">
+        <div class="settings_modal">
+          <div class="right">
+            <div class="profile-img">
+              <img src="imgs/sallam.jfif" />
+            </div>
+            <div class="profile-info">
+              <h3>ahmed sallam</h3>
+              <p>ahmedsallam@yahoo.com</p>
+            </div>
+            <ul class="settings-list">
+              <li
+                class="settings-active setting-item-list"
+                data-name="profile-general"
+              >
+                البروفايل
+              </li>
+              <li class="setting-item-list" data-name="personal-account">
+                الحساب الشخصي
+              </li>
+              <li class="setting-item-list" data-name="rate">التقييمات</li>
+              <li class="setting-item-list" data-name="log-out">
+                تسجيل الخروج
+              </li>
+            </ul>
+          </div>
+          <div class="left">
+            <span class="icon hamb">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <div class="settings_general">
+              <div class="rate profile-container hidden">
+                <!-- <span>لا توجد تقييمات </span> -->
+                <div class="settings-profile-rate">
+                  <div class="user-rate-details">
+                    <div class="user-rate-info">
+                      <img src="imgs/sallam.jfif" />
+                      <h4>احمد سلام</h4>
+                    </div>
+                    <div class="user-star-rate">
+                      <ul>
+                        <li>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            id="star"
+                          >
+                            <path
+                              fill="#ff7900"
+                              d="M10.975 18.847a2 2 0 0 1 2.049.002l3.34 1.997c.8.478 1.778-.229 1.568-1.123l-.877-3.72a2 2 0 0 1 .646-1.978l2.934-2.513c.705-.603.326-1.746-.6-1.819l-3.882-.325a2 2 0 0 1-1.671-1.205L12.968 4.63c-.358-.841-1.578-.841-1.936 0L9.52 8.154a2 2 0 0 1-1.67 1.203l-3.885.326c-.925.073-1.304 1.216-.6 1.819L6.3 14.015a2 2 0 0 1 .645 1.978l-.877 3.72c-.21.894.768 1.6 1.567 1.122l3.34-1.988Z"
+                            ></path>
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            id="star"
+                          >
+                            <path
+                              fill="#ff7900"
+                              d="M10.975 18.847a2 2 0 0 1 2.049.002l3.34 1.997c.8.478 1.778-.229 1.568-1.123l-.877-3.72a2 2 0 0 1 .646-1.978l2.934-2.513c.705-.603.326-1.746-.6-1.819l-3.882-.325a2 2 0 0 1-1.671-1.205L12.968 4.63c-.358-.841-1.578-.841-1.936 0L9.52 8.154a2 2 0 0 1-1.67 1.203l-3.885.326c-.925.073-1.304 1.216-.6 1.819L6.3 14.015a2 2 0 0 1 .645 1.978l-.877 3.72c-.21.894.768 1.6 1.567 1.122l3.34-1.988Z"
+                            ></path>
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            id="star"
+                          >
+                            <path
+                              fill="#ff7900"
+                              d="M10.975 18.847a2 2 0 0 1 2.049.002l3.34 1.997c.8.478 1.778-.229 1.568-1.123l-.877-3.72a2 2 0 0 1 .646-1.978l2.934-2.513c.705-.603.326-1.746-.6-1.819l-3.882-.325a2 2 0 0 1-1.671-1.205L12.968 4.63c-.358-.841-1.578-.841-1.936 0L9.52 8.154a2 2 0 0 1-1.67 1.203l-3.885.326c-.925.073-1.304 1.216-.6 1.819L6.3 14.015a2 2 0 0 1 .645 1.978l-.877 3.72c-.21.894.768 1.6 1.567 1.122l3.34-1.988Z"
+                            ></path>
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            id="star"
+                          >
+                            <path
+                              fill="#ff7900"
+                              d="M10.975 18.847a2 2 0 0 1 2.049.002l3.34 1.997c.8.478 1.778-.229 1.568-1.123l-.877-3.72a2 2 0 0 1 .646-1.978l2.934-2.513c.705-.603.326-1.746-.6-1.819l-3.882-.325a2 2 0 0 1-1.671-1.205L12.968 4.63c-.358-.841-1.578-.841-1.936 0L9.52 8.154a2 2 0 0 1-1.67 1.203l-3.885.326c-.925.073-1.304 1.216-.6 1.819L6.3 14.015a2 2 0 0 1 .645 1.978l-.877 3.72c-.21.894.768 1.6 1.567 1.122l3.34-1.988Z"
+                            ></path>
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            id="star"
+                          >
+                            <path
+                              fill="white"
+                              d="M10.975 18.847a2 2 0 0 1 2.049.002l3.34 1.997c.8.478 1.778-.229 1.568-1.123l-.877-3.72a2 2 0 0 1 .646-1.978l2.934-2.513c.705-.603.326-1.746-.6-1.819l-3.882-.325a2 2 0 0 1-1.671-1.205L12.968 4.63c-.358-.841-1.578-.841-1.936 0L9.52 8.154a2 2 0 0 1-1.67 1.203l-3.885.326c-.925.073-1.304 1.216-.6 1.819L6.3 14.015a2 2 0 0 1 .645 1.978l-.877 3.72c-.21.894.768 1.6 1.567 1.122l3.34-1.988Z"
+                            ></path>
+                          </svg>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="user-rate-comment">
+                    <p>
+                      بصراحه الاكل من المطعم دة تحفه وقمه في النضافه والشياكه
+                      ربنا يقويكم والاكل ميه ميه حتي الاسعار في منتهي المواطن
+                      المصري الغلبان
+                    </p>
+                  </div>
+                  <span> 13 فبراير 2024</span>
+                </div>
+                <div class="settings-profile-rate">
+                  <div class="user-rate-details">
+                    <div class="user-rate-info">
+                      <img src="imgs/client1.webp" />
+                      <h4>يوسف اشرف</h4>
+                    </div>
+                    <div class="user-star-rate">
+                      <ul>
+                        <li>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            id="star"
+                          >
+                            <path
+                              fill="#ff7900"
+                              d="M10.975 18.847a2 2 0 0 1 2.049.002l3.34 1.997c.8.478 1.778-.229 1.568-1.123l-.877-3.72a2 2 0 0 1 .646-1.978l2.934-2.513c.705-.603.326-1.746-.6-1.819l-3.882-.325a2 2 0 0 1-1.671-1.205L12.968 4.63c-.358-.841-1.578-.841-1.936 0L9.52 8.154a2 2 0 0 1-1.67 1.203l-3.885.326c-.925.073-1.304 1.216-.6 1.819L6.3 14.015a2 2 0 0 1 .645 1.978l-.877 3.72c-.21.894.768 1.6 1.567 1.122l3.34-1.988Z"
+                            ></path>
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            id="star"
+                          >
+                            <path
+                              fill="#ff7900"
+                              d="M10.975 18.847a2 2 0 0 1 2.049.002l3.34 1.997c.8.478 1.778-.229 1.568-1.123l-.877-3.72a2 2 0 0 1 .646-1.978l2.934-2.513c.705-.603.326-1.746-.6-1.819l-3.882-.325a2 2 0 0 1-1.671-1.205L12.968 4.63c-.358-.841-1.578-.841-1.936 0L9.52 8.154a2 2 0 0 1-1.67 1.203l-3.885.326c-.925.073-1.304 1.216-.6 1.819L6.3 14.015a2 2 0 0 1 .645 1.978l-.877 3.72c-.21.894.768 1.6 1.567 1.122l3.34-1.988Z"
+                            ></path>
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            id="star"
+                          >
+                            <path
+                              fill="#ff7900"
+                              d="M10.975 18.847a2 2 0 0 1 2.049.002l3.34 1.997c.8.478 1.778-.229 1.568-1.123l-.877-3.72a2 2 0 0 1 .646-1.978l2.934-2.513c.705-.603.326-1.746-.6-1.819l-3.882-.325a2 2 0 0 1-1.671-1.205L12.968 4.63c-.358-.841-1.578-.841-1.936 0L9.52 8.154a2 2 0 0 1-1.67 1.203l-3.885.326c-.925.073-1.304 1.216-.6 1.819L6.3 14.015a2 2 0 0 1 .645 1.978l-.877 3.72c-.21.894.768 1.6 1.567 1.122l3.34-1.988Z"
+                            ></path>
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            id="star"
+                          >
+                            <path
+                              fill="#ff7900"
+                              d="M10.975 18.847a2 2 0 0 1 2.049.002l3.34 1.997c.8.478 1.778-.229 1.568-1.123l-.877-3.72a2 2 0 0 1 .646-1.978l2.934-2.513c.705-.603.326-1.746-.6-1.819l-3.882-.325a2 2 0 0 1-1.671-1.205L12.968 4.63c-.358-.841-1.578-.841-1.936 0L9.52 8.154a2 2 0 0 1-1.67 1.203l-3.885.326c-.925.073-1.304 1.216-.6 1.819L6.3 14.015a2 2 0 0 1 .645 1.978l-.877 3.72c-.21.894.768 1.6 1.567 1.122l3.34-1.988Z"
+                            ></path>
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            id="star"
+                          >
+                            <path
+                              fill="white"
+                              d="M10.975 18.847a2 2 0 0 1 2.049.002l3.34 1.997c.8.478 1.778-.229 1.568-1.123l-.877-3.72a2 2 0 0 1 .646-1.978l2.934-2.513c.705-.603.326-1.746-.6-1.819l-3.882-.325a2 2 0 0 1-1.671-1.205L12.968 4.63c-.358-.841-1.578-.841-1.936 0L9.52 8.154a2 2 0 0 1-1.67 1.203l-3.885.326c-.925.073-1.304 1.216-.6 1.819L6.3 14.015a2 2 0 0 1 .645 1.978l-.877 3.72c-.21.894.768 1.6 1.567 1.122l3.34-1.988Z"
+                            ></path>
+                          </svg>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="user-rate-comment">
+                    <p>
+                      بصراحه الاكل من المطعم دة تحفه وقمه في النضافه والشياكه
+                      ربنا يقويكم والاكل ميه ميه حتي الاسعار في منتهي المواطن
+                      المصري الغلبان
+                    </p>
+                  </div>
+                  <span> 13 فبراير 2024</span>
+                </div>
+                <div class="settings-profile-rate">
+                  <div class="user-rate-details">
+                    <div class="user-rate-info">
+                      <img src="imgs/client1.webp" />
+                      <h4>يوسف اشرف</h4>
+                    </div>
+                    <div class="user-star-rate">
+                      <ul>
+                        <li>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            id="star"
+                          >
+                            <path
+                              fill="#ff7900"
+                              d="M10.975 18.847a2 2 0 0 1 2.049.002l3.34 1.997c.8.478 1.778-.229 1.568-1.123l-.877-3.72a2 2 0 0 1 .646-1.978l2.934-2.513c.705-.603.326-1.746-.6-1.819l-3.882-.325a2 2 0 0 1-1.671-1.205L12.968 4.63c-.358-.841-1.578-.841-1.936 0L9.52 8.154a2 2 0 0 1-1.67 1.203l-3.885.326c-.925.073-1.304 1.216-.6 1.819L6.3 14.015a2 2 0 0 1 .645 1.978l-.877 3.72c-.21.894.768 1.6 1.567 1.122l3.34-1.988Z"
+                            ></path>
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            id="star"
+                          >
+                            <path
+                              fill="#ff7900"
+                              d="M10.975 18.847a2 2 0 0 1 2.049.002l3.34 1.997c.8.478 1.778-.229 1.568-1.123l-.877-3.72a2 2 0 0 1 .646-1.978l2.934-2.513c.705-.603.326-1.746-.6-1.819l-3.882-.325a2 2 0 0 1-1.671-1.205L12.968 4.63c-.358-.841-1.578-.841-1.936 0L9.52 8.154a2 2 0 0 1-1.67 1.203l-3.885.326c-.925.073-1.304 1.216-.6 1.819L6.3 14.015a2 2 0 0 1 .645 1.978l-.877 3.72c-.21.894.768 1.6 1.567 1.122l3.34-1.988Z"
+                            ></path>
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            id="star"
+                          >
+                            <path
+                              fill="#ff7900"
+                              d="M10.975 18.847a2 2 0 0 1 2.049.002l3.34 1.997c.8.478 1.778-.229 1.568-1.123l-.877-3.72a2 2 0 0 1 .646-1.978l2.934-2.513c.705-.603.326-1.746-.6-1.819l-3.882-.325a2 2 0 0 1-1.671-1.205L12.968 4.63c-.358-.841-1.578-.841-1.936 0L9.52 8.154a2 2 0 0 1-1.67 1.203l-3.885.326c-.925.073-1.304 1.216-.6 1.819L6.3 14.015a2 2 0 0 1 .645 1.978l-.877 3.72c-.21.894.768 1.6 1.567 1.122l3.34-1.988Z"
+                            ></path>
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            id="star"
+                          >
+                            <path
+                              fill="#ff7900"
+                              d="M10.975 18.847a2 2 0 0 1 2.049.002l3.34 1.997c.8.478 1.778-.229 1.568-1.123l-.877-3.72a2 2 0 0 1 .646-1.978l2.934-2.513c.705-.603.326-1.746-.6-1.819l-3.882-.325a2 2 0 0 1-1.671-1.205L12.968 4.63c-.358-.841-1.578-.841-1.936 0L9.52 8.154a2 2 0 0 1-1.67 1.203l-3.885.326c-.925.073-1.304 1.216-.6 1.819L6.3 14.015a2 2 0 0 1 .645 1.978l-.877 3.72c-.21.894.768 1.6 1.567 1.122l3.34-1.988Z"
+                            ></path>
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            id="star"
+                          >
+                            <path
+                              fill="white"
+                              d="M10.975 18.847a2 2 0 0 1 2.049.002l3.34 1.997c.8.478 1.778-.229 1.568-1.123l-.877-3.72a2 2 0 0 1 .646-1.978l2.934-2.513c.705-.603.326-1.746-.6-1.819l-3.882-.325a2 2 0 0 1-1.671-1.205L12.968 4.63c-.358-.841-1.578-.841-1.936 0L9.52 8.154a2 2 0 0 1-1.67 1.203l-3.885.326c-.925.073-1.304 1.216-.6 1.819L6.3 14.015a2 2 0 0 1 .645 1.978l-.877 3.72c-.21.894.768 1.6 1.567 1.122l3.34-1.988Z"
+                            ></path>
+                          </svg>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="user-rate-comment">
+                    <p>
+                      بصراحه الاكل من المطعم دة تحفه وقمه في النضافه والشياكه
+                      ربنا يقويكم والاكل ميه ميه حتي الاسعار في منتهي المواطن
+                      المصري الغلبان
+                    </p>
+                  </div>
+                  <span> 13 فبراير 2024</span>
+                </div>
+                <div class="settings-profile-rate">
+                  <div class="user-rate-details">
+                    <div class="user-rate-info">
+                      <img src="imgs/client1.webp" />
+                      <h4>يوسف اشرف</h4>
+                    </div>
+                    <div class="user-star-rate">
+                      <ul>
+                        <li>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            id="star"
+                          >
+                            <path
+                              fill="#ff7900"
+                              d="M10.975 18.847a2 2 0 0 1 2.049.002l3.34 1.997c.8.478 1.778-.229 1.568-1.123l-.877-3.72a2 2 0 0 1 .646-1.978l2.934-2.513c.705-.603.326-1.746-.6-1.819l-3.882-.325a2 2 0 0 1-1.671-1.205L12.968 4.63c-.358-.841-1.578-.841-1.936 0L9.52 8.154a2 2 0 0 1-1.67 1.203l-3.885.326c-.925.073-1.304 1.216-.6 1.819L6.3 14.015a2 2 0 0 1 .645 1.978l-.877 3.72c-.21.894.768 1.6 1.567 1.122l3.34-1.988Z"
+                            ></path>
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            id="star"
+                          >
+                            <path
+                              fill="#ff7900"
+                              d="M10.975 18.847a2 2 0 0 1 2.049.002l3.34 1.997c.8.478 1.778-.229 1.568-1.123l-.877-3.72a2 2 0 0 1 .646-1.978l2.934-2.513c.705-.603.326-1.746-.6-1.819l-3.882-.325a2 2 0 0 1-1.671-1.205L12.968 4.63c-.358-.841-1.578-.841-1.936 0L9.52 8.154a2 2 0 0 1-1.67 1.203l-3.885.326c-.925.073-1.304 1.216-.6 1.819L6.3 14.015a2 2 0 0 1 .645 1.978l-.877 3.72c-.21.894.768 1.6 1.567 1.122l3.34-1.988Z"
+                            ></path>
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            id="star"
+                          >
+                            <path
+                              fill="#ff7900"
+                              d="M10.975 18.847a2 2 0 0 1 2.049.002l3.34 1.997c.8.478 1.778-.229 1.568-1.123l-.877-3.72a2 2 0 0 1 .646-1.978l2.934-2.513c.705-.603.326-1.746-.6-1.819l-3.882-.325a2 2 0 0 1-1.671-1.205L12.968 4.63c-.358-.841-1.578-.841-1.936 0L9.52 8.154a2 2 0 0 1-1.67 1.203l-3.885.326c-.925.073-1.304 1.216-.6 1.819L6.3 14.015a2 2 0 0 1 .645 1.978l-.877 3.72c-.21.894.768 1.6 1.567 1.122l3.34-1.988Z"
+                            ></path>
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            id="star"
+                          >
+                            <path
+                              fill="#ff7900"
+                              d="M10.975 18.847a2 2 0 0 1 2.049.002l3.34 1.997c.8.478 1.778-.229 1.568-1.123l-.877-3.72a2 2 0 0 1 .646-1.978l2.934-2.513c.705-.603.326-1.746-.6-1.819l-3.882-.325a2 2 0 0 1-1.671-1.205L12.968 4.63c-.358-.841-1.578-.841-1.936 0L9.52 8.154a2 2 0 0 1-1.67 1.203l-3.885.326c-.925.073-1.304 1.216-.6 1.819L6.3 14.015a2 2 0 0 1 .645 1.978l-.877 3.72c-.21.894.768 1.6 1.567 1.122l3.34-1.988Z"
+                            ></path>
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            id="star"
+                          >
+                            <path
+                              fill="white"
+                              d="M10.975 18.847a2 2 0 0 1 2.049.002l3.34 1.997c.8.478 1.778-.229 1.568-1.123l-.877-3.72a2 2 0 0 1 .646-1.978l2.934-2.513c.705-.603.326-1.746-.6-1.819l-3.882-.325a2 2 0 0 1-1.671-1.205L12.968 4.63c-.358-.841-1.578-.841-1.936 0L9.52 8.154a2 2 0 0 1-1.67 1.203l-3.885.326c-.925.073-1.304 1.216-.6 1.819L6.3 14.015a2 2 0 0 1 .645 1.978l-.877 3.72c-.21.894.768 1.6 1.567 1.122l3.34-1.988Z"
+                            ></path>
+                          </svg>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="user-rate-comment">
+                    <p>
+                      بصراحه الاكل من المطعم دة تحفه وقمه في النضافه والشياكه
+                      ربنا يقويكم والاكل ميه ميه حتي الاسعار في منتهي المواطن
+                      المصري الغلبان
+                    </p>
+                  </div>
+                  <span> 13 فبراير 2024</span>
+                </div>
+              </div>
+              <div class="profile-general profile-container">
+                <h2 class="mainSettingsTitle">الاعدادات العامه</h2>
+                <label for="language"> اللغه : </label>
+                <select id="language">
+                  <option value="العربيه">العربية</option>
+                  <option value="الانجليزية">الانجليزيه</option>
+                </select>
+                <div class="profile-appearnce">
+                  <h3 class="mainSettingsTitle">المظهر</h3>
+                  <div class="profile-font">
+                    <span>حجم الخط</span>
+                    <p class="active-font" data-font="24px">A</p>
+                    <p data-font="20px">A</p>
+                    <p data-font="16px">A</p>
+                  </div>
+                  <div class="profile-theme">
+                    <span>الثيمات</span>
+                    <p data-theme="red"></p>
+                    <p data-theme="blue"></p>
+                    <p data-theme="green"></p>
+                    <p data-theme="grey"></p>
+                    <p data-theme="orange"></p>
+                    <p data-theme="yellow"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="personal-account profile-container hidden">
+                <form>
+                  <div class="form-group">
+                    <label>الاسم</label>
+                    <input type="text" value="ahmed sallam" name="full-name" />
+                  </div>
+                  <div class="form-group">
+                    <label>البريد الالكتروني</label>
+                    <input
+                      type="text"
+                      value="ahmedsallam@yahoo.com"
+                      name="email"
+                    />
+                  </div>
+                  <a href="">تغيير كلمه المرور</a>
+                  <button type="submit">حفظ التغييرات</button>
+                </form>
+                <div class="payment-details">
+                  <h3>معلومات الدفع</h3>
+                </div>
+              </div>
+              <div class="log-out profile-container hidden">
+                <h1>تم تسجيل الخروج بنجاح</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

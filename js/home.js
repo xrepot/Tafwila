@@ -11,38 +11,31 @@ const dotsContainer = document.querySelector(".dotsSlider");
 let categories = document.getElementById("categories-items");
 let foodPhoto = document.querySelectorAll(".food-photo");
 
-// Open Menu
-opanMenuBtn.addEventListener("click", () => {
-  navMenu.classList.add("active-menu");
-});
+// // Open Menu
+// opanMenuBtn.addEventListener("click", () => {
+//   navMenu.classList.add("active-menu");
+// });
 
-// Cloase Menu
-closeMenuBtn.addEventListener("click", () => {
-  navMenu.classList.remove("active-menu");
-});
+// // Cloase Menu
+// closeMenuBtn.addEventListener("click", () => {
+//   navMenu.classList.remove("active-menu");
+// });
 
 // Actice link on click
-linksContainer.addEventListener("click", function (e) {
-  const element = e.target;
-  if (element.classList.contains("navLI")) {
-    navLinks.forEach((nav) => {
-      nav.classList.remove("active");
-    });
-    element.classList.add("active");
-  }
-});
+// linksContainer.addEventListener("click", function (e) {
+//   const element = e.target;
+//   if (element.classList.contains("navLI")) {
+//     navLinks.forEach((nav) => {
+//       nav.classList.remove("active");
+//     });
+//     element.classList.add("active");
+//   }
+// });
 
 // Active Link On Scroll
-window.addEventListener("scroll", function () {
-  sections.forEach(function (s) {
-    if (window.scrollY >= s.offsetTop - 200) {
-      navLinks.forEach((e) => {
-        e.classList.remove("active");
-        `#${s.id}` == e.getAttribute("href") ? e.classList.add("active") : "";
-      });
-    }
-  });
-});
+// window.addEventListener("scroll", function () {
+
+// });
 
 // building slider
 let currentSlide = 0;
@@ -106,10 +99,8 @@ btnLeft.addEventListener("click", nextSlide);
 document.addEventListener("keydown", function (e) {
   if (e.key === "ArrowRight") {
     prevSlide();
-
   } else if (e.key === "ArrowLeft") {
     nextSlide();
-
   }
 });
 

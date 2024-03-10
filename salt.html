@@ -9,6 +9,8 @@
       rel="stylesheet"
     />
     <title>تفويلة</title>
+    <script src="components/Header.js" type="module"></script>
+    <script src="components/ScrollToTop.js" type="module"></script>
   </head>
   <body>
     <!------------navbar for mobile device---------------------->
@@ -24,40 +26,14 @@
       </div>
     </div>
     <!------------navbar for xl device---------------------->
-    <div class="head">
-      <div class="container">
-        <div class="logo">
-          <span class="menu-icon">
-            <i class="uil uil-bars"> </i>
-          </span>
-          <a href="index.html">
-            <img alt="logo" src="imgs/logo.png" />
-          </a>
-        </div>
-        <div class="links">
-          <ul class="ul-links">
-            <li>
-              <a class="navLI" href="#home"> الرئيسية </a>
-            </li>
-            <li>
-              <a class="navLI" href="#categories"> الاقسام </a>
-            </li>
-            <li>
-              <a class="navLI" href="#menu"> المنيو </a>
-            </li>
-            <li>
-              <a class="navLI" href="contact.html"> تواصل معنا </a>
-            </li>
-          </ul>
-        </div>
-        <div class="btns">
-          <i class="uil uil-globe"> </i>
-          <a href="#">
-            <i class="uil uil-shopping-bag cart-icon"> </i>
-          </a>
-        </div>
-      </div>
-    </div>
+    <large-header>
+      <span slot="menu-icon" class="menu-icon">
+        <i class="uil uil-bars"> </i>
+      </span>
+      <a slot="cart-icon-link" class="cart-icon-link" href="cart.html">
+        <i class="uil uil-shopping-bag cart-icon"> </i>
+      </a>
+    </large-header>
     <!---------------------main section----------------------------->
     <!---------------categories section----------------------------->
     <!---------------menu section----------------------------->
@@ -196,6 +172,10 @@
         </div>
       </div>
     </section>
+    <!----------------Scroll to top--------------------->
+    <scroll-up>
+      <i class="uil uil-angle-double-up scrollup" slot="scroll-up"></i>
+    </scroll-up>
     <!----------------footer--------------------->
     <footer class="footer">
       <p>
